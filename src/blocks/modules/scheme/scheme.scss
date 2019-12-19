@@ -28,9 +28,26 @@
   }
 
   ._customer-scheme__list {
+    position: relative;
+
     margin-top: 190px;
     display: flex;
     justify-content: space-between;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -77px;
+      left: 122px;
+
+      width: 791px;
+      height: 3px;
+
+      background-image: url("../img/scheme-img.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
 
     ._customer-scheme__list-item {
       display: flex;
