@@ -1,0 +1,89 @@
+._customer-relocation {
+  margin-top: -20px;
+
+  ._customer-container {
+    position: relative;
+
+    padding: 40px 370px 35px  40px;
+
+    box-shadow: 0 11px 54px rgba(60, 60, 60, 0.41);
+    border-radius: 10px;
+    background-color: #d0ebfd;
+    background-image: url("../img/relocation-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 130px;
+
+      width: 234px;
+      height: 365px;
+
+      background-image: url("../img/relocation-img.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  ._customer-relocation__title {
+    color: #333333;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  ._customer-relocation__text {
+    margin-top: 20px;
+
+    color: #666666;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  ._customer-relocation__h3 {
+    position: relative;
+
+    padding-left: 60px;
+    margin-top: 25px;
+
+    color: #303030;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+
+      width: 40px;
+      height: 44px;
+
+      background-image: url("../img/relocation-icon.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  ._customer-relocation__button {
+    margin-top: 30px;
+    padding: 15px 25px;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: normal;
+
+    border-radius: 25px;
+    background-image: linear-gradient(to top, #ff7500 0%, #ffa600 100%);
+  }
+}

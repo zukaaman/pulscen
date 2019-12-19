@@ -1,0 +1,233 @@
+._customer-why {
+  margin-top: 100px;
+
+  ._customer-why__title {
+    position: relative;
+
+    padding-left: 30px;
+    flex-basis: 100%;
+
+    color: #333333;
+    font-size: 26px;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc((100% - 13px) / 2);
+      left: 4px;
+
+      display: block;
+      width: 13px;
+      height: 13px;
+
+      border-radius: 50%;
+      background-color: #f98900;
+    }
+  }
+
+  ._customer-why__list1 {
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+
+    ._customer-why__list1-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 33%;
+
+      &:nth-of-type(1) {
+
+        ._customer-why__list1-item-number::before {
+          top: calc((100% - 130px) / 2);
+          left: calc((100% - 191px) / 2);
+
+          width: 191px;
+          height: 130px;
+
+          background-image: url("../img/why-img1.png");
+        }
+      }
+
+      &:nth-of-type(2) {
+
+        ._customer-why__list1-item-number::before {
+          top: calc((100% - 120px) / 2);
+          left: calc((100% - 107px) / 2);
+
+          width: 107px;
+          height: 120px;
+
+          background-image: url("../img/why-img2.png");
+        }
+      }
+
+      &:nth-of-type(3) {
+
+        ._customer-why__list1-item-number::before {
+          top: calc((100% - 99px) / 2);
+          left: calc((100% - 111px) / 2);
+
+          width: 111px;
+          height: 99px;
+
+          background-image: url("../img/why-img3.png");
+        }
+      }
+    }
+
+    ._customer-why__list1-item-top-text {
+      z-index: 20;
+
+      color: #666666;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+
+    ._customer-why__list1-item-number {
+      position: relative;
+      z-index: 10;
+
+      margin-top: 40px;
+
+      color: #73c6fd;
+      font-size: 104px;
+      font-weight: 500;
+      line-height: 19.2px;
+
+      text-shadow: 10px 0 10px rgba(0, 108, 189, 0.9);
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -10;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    ._customer-why__list1-item-bottom-text {
+      z-index: 10;
+
+      margin-top: 60px;
+
+      color: #303030;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  ._customer-why__list2 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    ._customer-why__list2-item {
+      flex-basis: 21%;
+
+      &:nth-of-type(1) {
+
+        ._customer-why__list2-item-text {
+
+          &::after {
+            top: 5px;
+            left: 25px;
+
+            width: 50px;
+            height: 50px;
+
+            background-image: url("../img/why-icon1.png");
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+
+        ._customer-why__list2-item-text {
+
+          &::after {
+            top: 0;
+            left: 25px;
+
+            width: 50px;
+            height: 57px;
+
+            background-image: url("../img/why-icon2.png");
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+
+        ._customer-why__list2-item-text {
+
+          &::after {
+            top: 3px;
+            left: 24px;
+
+            width: 55px;
+            height: 55px;
+
+            background-image: url("../img/why-icon3.png");
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+
+        ._customer-why__list2-item-text {
+
+          &::after {
+            top: 10px;
+            left: 24px;
+
+            width: 55px;
+            height: 45px;
+
+            background-image: url("../img/why-icon4.png");
+          }
+        }
+      }
+    }
+
+    ._customer-why__list2-item-text {
+      position: relative;
+
+      padding-left: 110px;
+
+      color: #303030;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 23px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 0;
+
+        width: 100px;
+        height: 100px;
+        display: block;
+
+        border-radius: 10px;
+        background-color: #f2f2f2;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+      }
+    }
+  }
+}

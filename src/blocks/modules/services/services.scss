@@ -1,0 +1,124 @@
+._customer-services {
+  margin-top: 90px;
+
+  ._customer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  ._customer-services__title {
+    position: relative;
+
+    padding-left: 30px;
+    flex-basis: 100%;
+
+    color: #333333;
+    font-size: 26px;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc((100% - 13px) / 2);
+      left: 4px;
+
+      display: block;
+      width: 13px;
+      height: 13px;
+
+      border-radius: 50%;
+      background-color: #f98900;
+    }
+  }
+
+  ._customer-services__block {
+    position: relative;
+
+    margin-top: 50px;
+    padding-left: 110px;
+    flex-basis: 48%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+
+      display: block;
+      width: 90px;
+      height: 90px;
+
+      border-radius: 10px;
+      background-image: linear-gradient(60deg, #00cbfe 0%, #004cb3 100%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 18px;
+
+      width: 54px;
+      height: 54px;
+
+      background-image: url("../img/services-icon1.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    ._customer-services__block-name {
+      padding-top: 5px;
+
+      color: #303030;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+    }
+
+    ._customer-services__block-text {
+      padding-top: 15px;
+
+      color: #303030;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+
+    ._customer-services__list-name {
+      padding-top: 15px;
+
+      font-weight: 500;
+    }
+
+    ._customer-services__list {
+      padding-top: 10px;
+    }
+
+    ._customer-services__list-item {
+      position: relative;
+
+      padding-left: 10px;
+
+      color: #666666;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 11px;
+        left: 0;
+
+        width: 4px;
+        height: 4px;
+        display: block;
+
+        background-color: #666666;
+        border-radius: 50%;
+      }
+    }
+  }
+}

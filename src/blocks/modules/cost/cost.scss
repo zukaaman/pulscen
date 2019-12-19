@@ -1,0 +1,62 @@
+._customer-cost {
+  margin-top: 100px;
+
+  ._customer-container {
+    position: relative;
+
+    padding: 40px 540px 40px  40px;
+
+    box-shadow: 0 11px 54px rgba(60, 60, 60, 0.41);
+    border-radius: 10px;
+    background-color: #d0ebfd;
+    background-image: url("../img/cost-img1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: 55px;
+
+      width: 389px;
+      height: 364px;
+
+      background-image: url("../img/cost-img.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  ._customer-cost__title {
+    color: #333333;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+
+  ._customer-cost__text {
+    margin-top: 20px;
+
+    color: #666666;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+  ._customer-cost__button {
+    margin-top: 20px;
+    padding: 15px 25px;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: normal;
+
+    border-radius: 25px;
+    background-image: linear-gradient(to top, #ff7500 0%, #ffa600 100%);
+  }
+}

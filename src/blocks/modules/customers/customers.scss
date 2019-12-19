@@ -1,0 +1,29 @@
+._customer-customers {
+  margin-top: 100px;
+
+  ._customer-customers__title {
+    position: relative;
+
+    padding-left: 30px;
+    flex-basis: 100%;
+    flex-basis: 100%;
+
+    color: #333333;
+    font-size: 26px;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc((100% - 13px) / 2);
+      left: 4px;
+
+      display: block;
+      width: 13px;
+      height: 13px;
+
+      border-radius: 50%;
+      background-color: #f98900;
+    }
+  }
+}

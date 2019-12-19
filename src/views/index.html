@@ -23,6 +23,7 @@
     <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../styles/main.css">
     <style>
       @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap&subset=cyrillic,cyrillic-ext');
@@ -32,7 +33,36 @@
     <!-- @@include("../blocks/modules/header/header.html") -->
     <!-- @@include("../blocks/modules/footer/footer.html") -->
     @@include("../blocks/modules/about/about.html")
+    @@include("../blocks/modules/services/services.html")
+    @@include("../blocks/modules/cost/cost.html")
+    @@include("../blocks/modules/price/price.html")
+    @@include("../blocks/modules/relocation/relocation.html")
+    @@include("../blocks/modules/why/why.html")
+    @@include("../blocks/modules/reviews/reviews.html")
+    @@include("../blocks/modules/customers/customers.html")
+    @@include("../blocks/modules/enlarge/enlarge.html")
+    @@include("../blocks/modules/geography/geography.html")
+    @@include("../blocks/modules/scheme/scheme.html")
 
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+      var mySwiper = new Swiper ('._customer-reviews__swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        slidesPerView: '3',
+        loop: true,
+        spaceBetween: 30,
+        // slidesOffsetBefore: 30,
+        // slidesOffsetAfter: 30,
+        centeredSlides: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '._customer-reviews__swiper-button-next',
+          prevEl: '._customer-reviews__swiper-button-prev',
+        },
+      })
+    </script>
     <script src="../js/main.js"></script>
     <!-- <script src="../js/vendor.js"></script> -->
   </body>

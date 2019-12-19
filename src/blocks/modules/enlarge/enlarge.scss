@@ -1,0 +1,124 @@
+._customer-enlarge {
+  margin-top: 80px;
+
+  ._customer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  ._customer-enlarge__title {
+    position: relative;
+
+    padding-left: 30px;
+    flex-basis: 100%;
+    flex-basis: 100%;
+
+    color: #333333;
+    font-size: 26px;
+    font-weight: 500;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc((100% - 13px) / 2);
+      left: 4px;
+
+      display: block;
+      width: 13px;
+      height: 13px;
+
+      border-radius: 50%;
+      background-color: #f98900;
+    }
+  }
+
+  ._customer-enlarge__text-block {
+    flex-basis: 60%;
+  }
+
+  ._customer-enlarge__text {
+    margin-top: 40px;
+
+    color: #303030;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+  }
+
+  ._customer-enlarge__list-name {
+    margin-top: 20px;
+
+    color: #303030;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+
+  ._customer-enlarge__list {
+    margin-top: 10px;
+
+    ._customer-enlarge__list-item {
+      position: relative;
+
+      padding-left: 10px;
+
+      color: #666666;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 24px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 11px;
+        left: 0;
+
+        width: 4px;
+        height: 4px;
+        display: block;
+
+        border-radius: 50%;
+        background-color: #666666;
+      }
+    }
+  }
+
+  ._customer-enlarge__button1 {
+    padding: 15px 25px;
+    margin-top: 35px;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+
+    border-radius: 25px;
+    background-image: linear-gradient(to top, #ff7500 0%, #ffa600 100%);
+  }
+
+  ._customer-enlarge__button2 {
+    padding: 12px 30px;
+    margin-left: 30px;
+
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 3px solid #ffa600;
+  }
+
+  ._customer-enlarge__img-wrapper {
+    width: 388px;
+    flex-basis: 40%;
+
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
