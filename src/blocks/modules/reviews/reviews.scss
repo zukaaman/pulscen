@@ -1,6 +1,10 @@
 ._customer-reviews {
   margin-top: 120px;
 
+  ._customer-container {
+    position: relative;
+  }
+
   ._customer-reviews__title {
     position: relative;
 
@@ -30,12 +34,15 @@
   ._customer-reviews__swiper-container {
     position: relative;
 
-    width: 100%;
+    width: calc(100% - 80px);
     margin-top: 50px;
+    margin-left: 40px;
 
     overflow: hidden;
 
-    .swiper-slide {
+    ._customer-reviews__swiper-slide {
+      z-index: 10;
+
       padding: 30px 30px 70px 30px;
       margin: 0;
       height: 440px;
@@ -44,6 +51,39 @@
       background-color: #f2f2f2;
 
       overflow: hidden;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -10;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    ._customer-reviews__swiper-slide--one::before {
+      width: 335px;
+      height: 162px;
+
+      background-image: url("../img/reviews-bg1.png");
+    }
+
+    ._customer-reviews__swiper-slide--two::before {
+      width: 335px;
+      height: 87px;
+
+      background-image: url("../img/reviews-bg2.png");
+    }
+
+    ._customer-reviews__swiper-slide--three::before {
+      width: 335px;
+      height: 42px;
+
+      background-image: url("../img/reviews-bg3.png");
     }
 
     ._customer-reviews__img-wrapper {
@@ -69,48 +109,51 @@
 
     ._customer-reviews__text {
       margin-top: 20px;
+      max-height: 180px;
 
       color: #151611;
       font-size: 16px;
       font-weight: 300;
       line-height: 23px;
+
+      overflow: hidden;
     }
+  }
 
-    ._customer-reviews__swiper-button-next {
-      position: absolute;
-      top: calc((100% - 21px) / 2);
-      right: 0;
-      z-index: 10;
+  ._customer-reviews__swiper-button-next {
+    position: absolute;
+    bottom: calc((440px - 21px) / 2);
+    right: 10px;
+    z-index: 10;
 
-      width: 12px;
-      height: 21px;
-      margin: 0;
+    width: 12px;
+    height: 21px;
+    margin: 0;
 
-      background-image: url("../img/reviews-arrow.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+    background-image: url("../img/reviews-arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-      cursor: pointer;
-    }
+    cursor: pointer;
+  }
 
-    ._customer-reviews__swiper-button-prev {
-      position: absolute;
-      top: calc((100% - 21px) / 2);
-      left: 0;
-      z-index: 10;
+  ._customer-reviews__swiper-button-prev {
+    position: absolute;
+    bottom: calc((440px - 21px) / 2);
+    left: 10px;
+    z-index: 10;
 
-      width: 12px;
-      height: 21px;
-      margin: 0;
+    width: 12px;
+    height: 21px;
+    margin: 0;
 
-      background-image: url("../img/reviews-arrow.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
+    background-image: url("../img/reviews-arrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-      transform: rotate(180deg);
-      cursor: pointer;
-    }
+    transform: rotate(180deg);
+    cursor: pointer;
   }
 }

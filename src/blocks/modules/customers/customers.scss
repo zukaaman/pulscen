@@ -26,4 +26,67 @@
       background-color: #f98900;
     }
   }
+
+  ._customer-customers__swiper-container {
+    position: relative;
+
+    width: 100%;
+    margin-top: 60px;
+
+    overflow: hidden;
+
+    ._customer-customers__img-wrapper {
+      width: 191px;
+      height: 121px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      overflow: hidden;
+
+      img {
+        height: 100%;
+
+        object-fit: contain;
+      }
+    }
+
+    ._customer-customers__swiper-button-next {
+      position: absolute;
+      top: calc((100% - 21px) / 2);
+      right: 10px;
+      z-index: 10;
+
+      width: 12px;
+      height: 21px;
+      margin: 0;
+
+      background-image: url("../img/reviews-arrow.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      cursor: pointer;
+    }
+
+    ._customer-customers__swiper-button-prev {
+      position: absolute;
+      top: calc((100% - 21px) / 2);
+      left: 10px;
+      z-index: 10;
+
+      width: 12px;
+      height: 21px;
+      margin: 0;
+
+      background-image: url("../img/reviews-arrow.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+  }
 }

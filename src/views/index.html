@@ -23,10 +23,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="../styles/main.css">
     <style>
       @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap&subset=cyrillic,cyrillic-ext');
+      @import url("https://unpkg.com/swiper/css/swiper.min.css");
     </style>
   </head>
   <body>
@@ -52,14 +52,23 @@
         slidesPerView: '3',
         loop: true,
         spaceBetween: 30,
-        // slidesOffsetBefore: 30,
-        // slidesOffsetAfter: 30,
-        centeredSlides: true,
-
-        // Navigation arrows
+        // centeredSlides: true,
+        // slidesOffsetBefore: 40,
+        width: 1066,
         navigation: {
           nextEl: '._customer-reviews__swiper-button-next',
           prevEl: '._customer-reviews__swiper-button-prev',
+        },
+      })
+
+      var mySwiper = new Swiper ('._customer-customers__swiper-container', {
+        direction: 'horizontal',
+        slidesPerView: '5',
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+          nextEl: '._customer-customers__swiper-button-next',
+          prevEl: '._customer-customers__swiper-button-prev',
         },
       })
     </script>
