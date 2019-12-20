@@ -1,6 +1,14 @@
 ._customer-services {
   margin-top: 90px;
 
+  @include m-1200 {
+    margin-top: 70px;
+  }
+
+  @include m-768 {
+    margin-top: 50px;
+  }
+
   ._customer-container {
     display: flex;
     justify-content: space-between;
@@ -20,7 +28,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: calc((100% - 13px) / 2);
+      top: 12px;
       left: 4px;
 
       display: block;
@@ -38,6 +46,10 @@
     margin-top: 50px;
     padding-left: 110px;
     flex-basis: 48%;
+
+    @include m-768 {
+      flex-basis: 100%;
+    }
 
     &::before {
       content: "";

@@ -48,10 +48,19 @@
     <script>
       var mySwiper = new Swiper ('._customer-reviews__swiper-container', {
         direction: 'horizontal',
-        slidesPerView: '3',
+        slidesPerView: 1,
         loop: true,
-        spaceBetween: 30,
-        width: 1066,
+        spaceBetween: 20,
+        breakpoints: {
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          }
+        },
         navigation: {
           nextEl: '._customer-reviews__swiper-button-next',
           prevEl: '._customer-reviews__swiper-button-prev',
@@ -60,16 +69,27 @@
 
       var mySwiper = new Swiper ('._customer-customers__swiper-container', {
         direction: 'horizontal',
-        slidesPerView: '5',
+        slidesPerView: 1,
         loop: true,
-        centeredSlides: true,
+        breakpoints: {
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 30
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          }
+        },
         navigation: {
           nextEl: '._customer-customers__swiper-button-next',
           prevEl: '._customer-customers__swiper-button-prev',
         },
       })
     </script>
-    <script src="../js/main.js"></script>
-    <!-- <script src="../js/vendor.js"></script> -->
   </body>
 </html>

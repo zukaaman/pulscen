@@ -1,6 +1,14 @@
 ._customer-customers {
   margin-top: 100px;
 
+  @include m-900 {
+    margin-top: 70px;
+  }
+
+  @include m-768 {
+    margin-top: 50px;
+  }
+
   ._customer-customers__title {
     position: relative;
 
@@ -15,7 +23,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: calc((100% - 13px) / 2);
+      top: 12px;
       left: 4px;
 
       display: block;
@@ -68,6 +76,10 @@
       background-size: contain;
 
       cursor: pointer;
+
+      @include m-900 {
+        right: 7px;
+      }
     }
 
     ._customer-customers__swiper-button-prev {
@@ -87,6 +99,10 @@
 
       transform: rotate(180deg);
       cursor: pointer;
+
+      @include m-900 {
+        left: 7px;
+      }
     }
   }
 }

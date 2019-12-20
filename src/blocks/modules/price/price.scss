@@ -2,6 +2,10 @@
   margin-top: 80px;
   height: 460px;
 
+  @include m-900 {
+    height: auto;
+  }
+
   ._customer-container {
     position: relative;
   }
@@ -19,7 +23,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: calc((100% - 13px) / 2);
+      top: 12px;
       left: 4px;
 
       display: block;
@@ -41,6 +45,14 @@
     display: flex;
     justify-content: space-between;
 
+    @include m-900 {
+      position: static;
+
+      flex-wrap: wrap;
+      margin-top: 15px;
+      height: auto;
+    }
+
     ._customer-price__list-item {
       padding: 15px 15px  25px;
       flex-basis: 25%;
@@ -53,6 +65,15 @@
       transition: 0.3s;
       overflow: hidden;
 
+      @include m-900 {
+        flex-basis: 50%;
+        height: auto;
+      }
+
+      @include m-768 {
+        flex-basis: 100%;
+      }
+
       &:hover {
         z-index: 10;
 
@@ -62,6 +83,10 @@
         border-radius: 6px;
 
         transition: 0.3s;
+
+        @include m-900 {
+          height: auto;
+        }
       }
     }
 
@@ -82,16 +107,16 @@
     }
 
     ._customer-price__list-item-name {
-      margin-top: 15px;
+      margin-top: 10px;
 
       color: #333333;
       font-size: 16px;
       font-weight: 500;
-      line-height: 11.4px;
+      line-height: normal;
     }
 
     ._customer-price__list-item-text {
-      margin-top: 10px;
+      margin-top: 5px;
 
       color: #666666;
       font-size: 14px;
@@ -124,6 +149,7 @@
     ._customer-price__list-item-size {
       padding: 4px 5px;
       margin-left: 10px;
+      flex: auto;
 
       color: #9b9b9b;
       font-size: 14px;

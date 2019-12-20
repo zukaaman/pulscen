@@ -5,6 +5,16 @@
     padding: 30px 50px 30px 110px;
     border-radius: 10px;
     background-color: #f2f2f2;
+
+    @include m-1200 {
+      padding: 30px 30px 30px 110px;
+      margin: 0 30px;
+    }
+
+    @include m-768 {
+      padding: 20px 20px 30px 70px;
+      margin: 0 15px;
+    }
   }
 
   ._customer-about__text {
@@ -32,6 +42,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+
+      @include m-768 {
+        left: -65px;
+      }
     }
   }
 }

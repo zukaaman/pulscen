@@ -1,6 +1,14 @@
 ._customer-why {
   margin-top: 100px;
 
+  @include m-900 {
+    margin-top: 70px;
+  }
+
+  @include m-768 {
+    margin-top: 50px;
+  }
+
   ._customer-why__title {
     position: relative;
 
@@ -14,7 +22,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: calc((100% - 13px) / 2);
+      top: 12px;
       left: 4px;
 
       display: block;
@@ -31,11 +39,24 @@
     display: flex;
     justify-content: space-between;
 
+    @include m-900 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     ._customer-why__list1-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       flex-basis: 33%;
+
+      @include m-900 {
+        flex-basis: 50%;
+      }
+
+      @include m-768 {
+        flex-basis: 100%;
+      }
 
       &:nth-of-type(1) {
 
@@ -52,6 +73,10 @@
 
       &:nth-of-type(2) {
 
+        @include m-768 {
+          margin-top: 50px;
+        }
+
         ._customer-why__list1-item-number::before {
           top: calc((100% - 120px) / 2);
           left: calc((100% - 107px) / 2);
@@ -64,6 +89,10 @@
       }
 
       &:nth-of-type(3) {
+
+        @include m-900 {
+          margin-top: 50px;
+        }
 
         ._customer-why__list1-item-number::before {
           top: calc((100% - 99px) / 2);
@@ -127,8 +156,17 @@
     display: flex;
     justify-content: space-between;
 
+    @include m-768 {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
     ._customer-why__list2-item {
       flex-basis: 21%;
+
+      @include m-768 {
+        flex-basis: 35%;
+      }
 
       &:nth-of-type(1) {
 
@@ -142,6 +180,11 @@
             height: 50px;
 
             background-image: url("../img/why-icon1.png");
+
+            @include m-1200 {
+              top: 24px;
+              left: calc((100% - 50px) / 2);
+            }
           }
         }
       }
@@ -158,11 +201,20 @@
             height: 57px;
 
             background-image: url("../img/why-icon2.png");
+
+            @include m-1200 {
+              top: 19px;
+              left: calc((100% - 50px) / 2);
+            }
           }
         }
       }
 
       &:nth-of-type(3) {
+
+        @include m-768 {
+          margin-top: 30px;
+        }
 
         ._customer-why__list2-item-text {
 
@@ -174,11 +226,20 @@
             height: 55px;
 
             background-image: url("../img/why-icon3.png");
+
+            @include m-1200 {
+              top: 23px;
+              left: calc((100% - 55px) / 2);
+            }
           }
         }
       }
 
       &:nth-of-type(4) {
+
+        @include m-768 {
+          margin-top: 30px;
+        }
 
         ._customer-why__list2-item-text {
 
@@ -190,6 +251,11 @@
             height: 45px;
 
             background-image: url("../img/why-icon4.png");
+
+            @include m-1200 {
+              top: 29px;
+              left: calc((100% - 55px) / 2);
+            }
           }
         }
       }
@@ -205,6 +271,13 @@
       font-weight: 300;
       line-height: 23px;
 
+      @include m-1200 {
+        padding-top: 110px;
+        padding-left: 0;
+
+        text-align: center;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -217,6 +290,11 @@
 
         border-radius: 10px;
         background-color: #f2f2f2;
+
+        @include m-1200 {
+          top: 0;
+          left: calc((100% - 100px) / 2);
+        }
       }
 
       &::after {

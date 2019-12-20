@@ -1,6 +1,14 @@
 ._customer-reviews {
   margin-top: 120px;
 
+  @include m-900 {
+    margin-top: 70px;
+  }
+
+  @include m-768 {
+    margin-top: 50px;
+  }
+
   ._customer-container {
     position: relative;
   }
@@ -19,7 +27,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: calc((100% - 13px) / 2);
+      top: 12px;
       left: 4px;
 
       display: block;
@@ -40,6 +48,16 @@
 
     overflow: hidden;
 
+    @include m-1200 {
+      width: calc(100% - 60px);
+      margin-left: 30px;
+    }
+
+    @include m-900 {
+      width: calc(100% - 30px);
+      margin-left: 15px;
+    }
+
     ._customer-reviews__swiper-slide {
       z-index: 10;
 
@@ -49,40 +67,22 @@
 
       border-radius: 6px;
       background-color: #f2f2f2;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
 
       overflow: hidden;
-
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -10;
-
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
     }
 
-    ._customer-reviews__swiper-slide--one::before {
-      width: 335px;
-      height: 162px;
-
+    ._customer-reviews__swiper-slide--one {
       background-image: url("../img/reviews-bg1.png");
     }
 
-    ._customer-reviews__swiper-slide--two::before {
-      width: 335px;
-      height: 87px;
-
+    ._customer-reviews__swiper-slide--two {
       background-image: url("../img/reviews-bg2.png");
     }
 
-    ._customer-reviews__swiper-slide--three::before {
-      width: 335px;
-      height: 42px;
-
+    ._customer-reviews__swiper-slide--three {
       background-image: url("../img/reviews-bg3.png");
     }
 
@@ -136,6 +136,10 @@
     background-size: contain;
 
     cursor: pointer;
+
+    @include m-900 {
+      right: 7px;
+    }
   }
 
   ._customer-reviews__swiper-button-prev {
@@ -155,5 +159,9 @@
 
     transform: rotate(180deg);
     cursor: pointer;
+
+    @include m-900 {
+      left: 7px;
+    }
   }
 }

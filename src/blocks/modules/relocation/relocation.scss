@@ -1,6 +1,10 @@
 ._customer-relocation {
   margin-top: -20px;
 
+  @include m-900 {
+    margin-top: 70px;
+  }
+
   ._customer-container {
     position: relative;
 
@@ -13,6 +17,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include m-1200 {
+      margin: 0 30px;
+      padding: 40px 260px 35px 40px;
+    }
+
+    @include m-768 {
+      margin: 0 15px;
+      padding: 20px 20px 390px 20px;
+    }
 
     &::before {
       content: "";
@@ -27,6 +41,10 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+
+      @include m-1200 {
+        right: 5%;
+      }
     }
   }
 
@@ -76,7 +94,7 @@
 
   ._customer-relocation__button {
     margin-top: 30px;
-    padding: 15px 25px;
+    padding: 13px 26px;
 
     color: #ffffff;
     font-size: 18px;

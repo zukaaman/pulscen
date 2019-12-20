@@ -26,16 +26,25 @@ ul {
 ._customer-container {
   margin: 0 auto;
   width: 1146px;
+
+  @include m-1200 {
+    width: auto;
+    margin: 0;
+    padding: 0 30px;
+  }
+
+  @include m-768 {
+    padding: 0 15px;
+  }
 }
 
-button,
-input,
-textarea {
+button {
   padding: 0;
   background: none;
   border: 0;
   cursor: pointer;
   outline: none;
+  font: inherit;
 }
 
 ._customer-visually-hidden:not(:focus):not(:active),
@@ -57,29 +66,6 @@ input[type=radio].visually-hidden {
 
 button:hover,
 button:active,
-button:focus,
-input:hover,
-input:active,
-input:focus {
+button:focus {
   outline: none;
-}
-
-input:focus::-webkit-input-placeholder,
-textarea:focus::-webkit-input-placeholder {
-  color:transparent;
-}
-
-input:focus:-moz-placeholder,
-textarea:focus:-moz-placeholder {
-  color:transparent;
-}
-
-input:focus::-moz-placeholder,
-textarea:focus::-moz-placeholder {
-  color:transparent;
-}
-
-input:focus:-ms-input-placeholder,
-textarea:focus:-ms-input-placeholder {
-  color:transparent;
 }

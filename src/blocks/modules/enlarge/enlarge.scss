@@ -21,7 +21,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: calc((100% - 13px) / 2);
+      top: 12px;
       left: 4px;
 
       display: block;
@@ -34,7 +34,16 @@
   }
 
   ._customer-enlarge__text-block {
-    flex-basis: 60%;
+    flex-basis: 56%;
+
+    @include m-900 {
+      flex-basis: 63%;
+    }
+
+    @include m-768 {
+      flex-basis: 100%;
+      order: 3;
+    }
   }
 
   ._customer-enlarge__text {
@@ -85,30 +94,41 @@
   }
 
   ._customer-enlarge__button1 {
-    padding: 15px 25px;
+    padding: 13px 26px;
     margin-top: 35px;
 
     color: #ffffff;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: normal;
 
     border-radius: 25px;
     background-image: linear-gradient(to top, #ff7500 0%, #ffa600 100%);
+
+    @include m-768 {
+      display: block;
+      margin: 20px auto 0;
+    }
   }
 
   ._customer-enlarge__button2 {
-    padding: 12px 30px;
+    padding: 10px 28px;
     margin-left: 30px;
 
     color: #000000;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: normal;
 
     border-radius: 25px;
     background-color: #ffffff;
     border: 3px solid #ffa600;
+
+    @include m-768 {
+      margin-top: 20px;
+      display: block;
+      margin: 20px auto 0;
+    }
   }
 
   ._customer-enlarge__img-wrapper {
@@ -116,6 +136,21 @@
     flex-basis: 40%;
 
     overflow: hidden;
+
+    @include m-1200 {
+      margin-top: 30px;
+    }
+
+    @include m-900 {
+      flex-basis: 33%;
+    }
+
+    @include m-768 {
+      flex-basis: 100%;
+      order: 2;
+      display: flex;
+      justify-content: center;
+    }
 
     img {
       object-fit: contain;
